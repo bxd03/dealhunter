@@ -43,3 +43,7 @@ yarn-error.log*
 
 # OS metadata
 .DS_Store
+
+# OCR engines are reproducibly copied from locked npm packages at build time
+/public/ocr/
+/*.traineddata

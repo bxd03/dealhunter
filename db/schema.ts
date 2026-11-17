@@ -3,3 +3,4 @@ export const profiles=sqliteTable('profiles',{id:text('id').primaryKey(),data:te
 export const catalog=sqliteTable('catalog',{id:text('id').primaryKey(),data:text('data').notNull(),updated:text('updated').notNull()});
 export const collection=sqliteTable('collection',{id:text('id').primaryKey(),data:text('data').notNull()});
 export const officialPromotions=sqliteTable('official_promotions',{id:text('id').primaryKey(),data:text('data').notNull()});
+export const voucherWallets=sqliteTable('voucher_wallets',{userId:text('user_id').primaryKey(),data:text('data').notNull()});

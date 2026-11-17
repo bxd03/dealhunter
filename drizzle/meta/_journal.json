@@ -15,6 +15,13 @@
       "when": 1794901784816,
       "tag": "0001_next_marvel_zombies",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1794903672534,
+      "tag": "0002_nostalgic_warhawk",
+      "breakpoints": true
     }
   ]
 }
