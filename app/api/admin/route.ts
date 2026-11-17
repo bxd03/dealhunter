@@ -1,0 +1,4 @@
+import {db,isAdmin,sameOrigin,persist,collect} from '../../../lib/server';
+import {validateDeals} from '../../../lib/deals';
+export const dynamic='force-dynamic';
+export async function POST(req:Request){if(!sameOrigin(req)||!isAdmin(req))return Response.json({error:'Administrator access required'},{status:403});try{const raw=await req.text();if(raw.length>1000000)throw Error('Import limit: 1 MB');const data=JSON.parse(raw);if(data.action==='refresh')return Response.json({count:await collect(true)});if(data.action==='remove'){if(typeof data.id!=='string')throw Error('Invalid menu ID');await db().prepare('DELETE FROM catalog WHERE id=?').bind(data.id).run();return Response.json({ok:true})}const deals=validateDeals(data.deals);await persist(deals);return Response.json({count:deals.length});}catch(e){return Response.json({error:(e as Error).message},{status:400});}}
