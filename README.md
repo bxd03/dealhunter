@@ -56,3 +56,9 @@ Prices are numeric MYR; dates must include timezone offsets. Mode is pickup or d
 ## Deployment
 
 `.openai/hosting.json` declares the hosted project and DB binding. Schema migrations are in drizzle/. Source is stored in this GitHub repository; publication uses the managed Sites source remote and build artifacts. GitHub changes do not automatically deploy; publish a new version after changes. Build outputs, runtime state and secrets are excluded from source control.
+
+## Official promotion pages and daily checks
+
+The default Official offers screen displays genuine public offers separately from the fictional menu comparisons. It tracks McDonald's Malaysia, Tealive and ZUS Coffee. Each offer includes source link, conditions, published dates when known, recurring availability and last checked time. Unknown end dates are not invented. Failed sources retain the previous saved offers, with a needs-recheck flag after 48 hours. Source-checked is not a guarantee of stock, outlet eligibility or consumer-account vouchers.
+
+The daily cloud task follows docs/official-updates.md, reads public official pages, writes only shared promotions to /api/official and verifies readback. This service writer relies on confirmed owner-private Sites authentication. **Disable the service writer or add separate service authorization before changing the Site to public/shared access.** No service credentials are committed. Routine offer updates do not require code deployment. Daily timing is 08:00 Asia/Kuala_Lumpur, subject to the saved cloud task's status and source availability.
