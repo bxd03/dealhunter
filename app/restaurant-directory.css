@@ -1,0 +1,62 @@
+/* DealHunter restaurant directory — clean contemporary brand-first cards. */
+.dh-restaurants{width:100%;padding-bottom:28px;color:#443356}
+.dh-restaurants__header{display:flex;justify-content:space-between;align-items:center;gap:26px;margin-bottom:25px}
+.dh-restaurants__eyebrow{font-size:10px;font-weight:900;letter-spacing:1.9px;color:#d35579;margin:0 0 11px}
+.dh-restaurants__header h1{font-family:'Nunito',ui-sans-serif,system-ui,sans-serif;font-size:clamp(29px,3.5vw,44px);font-weight:900;letter-spacing:-1.9px;line-height:1.14;color:#483159;margin:0 0 12px}
+.dh-restaurants__header h1 span{color:#d95c85}
+.dh-restaurants__header>div:first-child>p:last-child{font-size:13px;color:#816f8e;line-height:1.7;max-width:660px;margin:0}
+.dh-restaurants__count{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #f1e3f1;border-radius:19px;padding:16px 18px;box-shadow:0 5px 18px #6438640b;white-space:nowrap}
+.dh-restaurants__count svg{color:#cd658e}
+.dh-restaurants__count b{font-size:23px;color:#693e78}
+.dh-restaurants__count span{font-size:11px;color:#8f7899;font-weight:800}
+.dh-restaurants__toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:26px 0 16px}
+.dh-restaurants__search{display:flex;align-items:center;gap:11px;flex:1;min-width:0;max-width:650px;height:53px;border-radius:17px;padding:0 16px;border:1px solid #e9dce9;background:#fff;box-shadow:0 5px 17px #966f9b0c;color:#b17eb3}
+.dh-restaurants__search:focus-within{outline:3px solid #eedcf5;outline-offset:1px;border-color:#bb9bd2}
+.dh-restaurants__search input{border:0!important;outline:0!important;box-shadow:none!important;min-width:0;flex:1;background:transparent!important;font:700 13px 'Nunito',sans-serif;color:#573c63;padding:0}
+.dh-restaurants__search input::placeholder{color:#ad9aae;font-weight:600}
+.dh-restaurants__search button{border-radius:9px;padding:6px;display:flex;align-items:center;color:#986ca0}
+.dh-restaurants__filter-label{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;font-size:12px;font-weight:800;color:#9779a1}
+.dh-restaurants__filters{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 26px}
+.dh-restaurants__filters button{font-size:12px;font-weight:800;border-radius:999px;padding:10px 17px;color:#815d8d;background:#fff;border:1px solid #eaddea;box-shadow:0 3px 10px #8d72910a}
+.dh-restaurants__filters button:hover{background:#faeef8}
+.dh-restaurants__filters button.is-active{color:white;background:#a75bb5;border-color:#a75bb5;box-shadow:0 4px 11px #a75bb52a}
+.dh-restaurants__result-bar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:0 0 16px}
+.dh-restaurants__result-bar h2{font-family:'Nunito',sans-serif;font-size:19px;font-weight:900;margin:0;color:#4d355f}
+.dh-restaurants__result-bar span{font-size:11px;font-weight:700;color:#9c849f}
+.dh-restaurants__result-bar i{display:inline-block;width:4px;height:4px;margin:0 8px 3px;border-radius:50%;background:#dbb9dc}
+.dh-restaurants__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.dh-restaurant{background:#fff;border:1px solid #efe1ee;border-radius:22px;padding:19px;box-shadow:0 5px 20px #5a326910;display:flex;flex-direction:column;gap:16px;min-width:0;position:relative;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.dh-restaurant:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#e77a94,#aa88de);opacity:.85}
+.dh-restaurant:nth-child(5n+2):before{background:linear-gradient(90deg,#b1a3ee,#80c9ba)}
+.dh-restaurant:nth-child(5n+3):before{background:linear-gradient(90deg,#ffb07e,#ff7eaa)}
+.dh-restaurant:hover{transform:translateY(-4px);box-shadow:0 13px 29px #5435621c;border-color:#e6cae6}
+.dh-restaurant__top{display:flex;align-items:center;gap:15px;min-width:0}
+.dh-restaurant__logo{width:102px;height:93px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:16px;background:#fbf9fc;border:1px solid #f0e7f1;padding:9px;overflow:hidden}
+.dh-restaurant__logo .brand-logo{border:0;box-shadow:none!important;margin:0!important;width:100%!important;height:100%!important;padding:4px!important;border-radius:11px;background:#fff}
+.dh-restaurant__logo .brand-logo--dark{background:#233b83!important}
+.dh-restaurant__logo .brand-logo img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;image-rendering:auto}
+.dh-restaurant__logo .brand-logo-fallback{font-size:12px;font-weight:900;text-align:center;line-height:1.25;letter-spacing:-.3px;color:#754b81;overflow-wrap:anywhere}
+.dh-restaurant__identity{min-width:0;flex:1}
+.dh-restaurant__type{display:inline-block;color:#bb648f;font-size:10px;font-weight:900;letter-spacing:.5px;margin-bottom:6px}
+.dh-restaurant__identity h3{font-family:'Nunito',sans-serif;font-size:17px;letter-spacing:-.4px;line-height:1.23;font-weight:900;color:#482b5a;margin:0 0 6px;overflow-wrap:anywhere}
+.dh-restaurant__identity p{font-size:11px;line-height:1.5;color:#96839c;margin:0;font-weight:700}
+.dh-restaurant__status{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:auto}
+.dh-restaurant__availability{display:inline-flex;align-items:center;gap:7px;background:#f6f0f8;padding:7px 10px;border-radius:999px;color:#8e7499;font-size:10px;font-weight:900;line-height:1.4}
+.dh-restaurant__availability i{width:7px;height:7px;border-radius:50%;background:#baa7bf}
+.dh-restaurant__availability.has-menus{background:#e9f6ee;color:#487b60}
+.dh-restaurant__availability.has-menus i{background:#55ae83}
+.dh-restaurant__status small{font-size:10px;color:#aa8fb0;font-weight:700}
+.dh-restaurant__actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-top:12px;border-top:1px solid #f2eaf2}
+.dh-restaurant__explore{display:inline-flex;align-items:center;gap:7px;justify-content:center;background:#bf4777;border:1px solid #bf4777;color:#fff;font-size:11px;font-weight:900;padding:11px 12px;border-radius:11px}
+.dh-restaurant__explore:hover{background:#9f3263}
+.dh-restaurant__website{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:11px;font-weight:900;color:#9356ac;padding:11px 3px}
+.dh-restaurant__website:hover{text-decoration:underline;color:#72358b}
+.dh-restaurant__pending{color:#98859d;font-weight:800;font-size:10px;margin-right:auto}
+.dh-restaurants__empty{text-align:center;background:#fff;border:1px dashed #e6cfe8;border-radius:22px;padding:48px 20px;color:#996fa8}
+.dh-restaurants__empty h3{font-size:17px;font-weight:900;margin:14px 0 8px}
+.dh-restaurants__empty p{font-size:12px;color:#9a85a1}
+.dh-restaurants__empty button{display:inline-flex;align-items:center;gap:7px;border-radius:11px;background:#ae74bf;color:#fff;padding:11px 16px;font-weight:800}
+.dh-restaurants__note{font-size:10px;line-height:1.8;color:#98829e;margin:20px 2px 0}
+@media(max-width:1180px){.dh-restaurants__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:730px){.dh-restaurants__header{align-items:flex-start}.dh-restaurants__header h1{font-size:30px}.dh-restaurants__count{padding:12px}.dh-restaurants__count span{display:none}.dh-restaurants__toolbar{display:block}.dh-restaurants__search{max-width:none}.dh-restaurants__filter-label{display:none}.dh-restaurants__filters{gap:7px;margin-top:14px}.dh-restaurants__filters button{font-size:10px;padding:9px 12px}.dh-restaurants__result-bar h2{font-size:16px}.dh-restaurants__result-bar span{font-size:9px}.dh-restaurants__grid{grid-template-columns:1fr;gap:12px}.dh-restaurant{padding:16px;border-radius:19px;gap:12px}.dh-restaurant__logo{width:87px;height:82px}.dh-restaurant__identity h3{font-size:16px}.dh-restaurant__actions{padding-top:10px}.dh-restaurants__note{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.dh-restaurant{transition:none}.dh-restaurant:hover{transform:none}}
