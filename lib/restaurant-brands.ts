@@ -29,7 +29,7 @@ export const restaurantBrands:RestaurantBrand[]=[
   {name:'FamilyMart',category:'Convenience',website:'https://www.familymart.com.my/',logo:'https://cdn.brandfetch.io/idmayRRNod/w/497/h/73/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1789153229347',tagline:'Snacks, desserts & more'},
   {name:'Subway',category:'Fast food',website:'https://www.subway.com/en-my/',logo:'https://upload.wikimedia.org/wikipedia/commons/5/5c/Subway_2016_logo.svg',tagline:'Freshly made sandwiches'},
   {name:'Sushi King',category:'Desserts & dining',website:'https://sushi-king.com/',logo:'https://www.sunwayvelocitymall.com/static/shops/a04d8ff4032d55fb8f8ddcd771dd2210/w768.png',tagline:'Japanese favourites'},
-  {name:'Secret Recipe',category:'Desserts & dining',website:'https://www.secretrecipe.com.my/',logo:'https://upload.wikimedia.org/wikipedia/commons/2/26/Secret_Recipe_Logo.png',logoBackground:'#fff',tagline:'Cakes, meals & desserts'}
+  {name:'Secret Recipe',category:'Desserts & dining',website:'https://www.secretrecipe.com.my/',logo:'https://upload.wikimedia.org/wikipedia/commons/8/85/Secret_Recipe_Logo.png',logoBackground:'#e90000',tagline:'Cakes, meals & desserts'}
 ];
 
 export function restaurantKey(name:string){
