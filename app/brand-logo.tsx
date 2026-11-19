@@ -2,7 +2,7 @@
 import {useEffect,useState} from 'react';
 
 // Source assets are authentic brand marks, not AI-recreated logos or generated initials.
-// Prefer sharp vector files; raster sources are high resolution. Update links when brands rebrand.
+// Prefer sharp vector files; raster sources are high resolution. KFC uses its official 2026 mark. Review when brands rebrand.
 type LogoAsset={src:string;backup?:string;dark?:boolean};
 const assets:Record<string,LogoAsset>={
   chagee:{
@@ -15,24 +15,24 @@ const assets:Record<string,LogoAsset>={
     dark:true
   },
   mcdonalds:{
-    src:'https://commons.wikimedia.org/wiki/Special:FilePath/McDonald%27s_square_2020.svg',
-    backup:'https://commons.wikimedia.org/wiki/Special:FilePath/McDonald%27s_Golden_Arches.svg'
+    src:'https://upload.wikimedia.org/wikipedia/commons/0/05/McDonald%27s_square_2020.svg',
+    backup:'https://upload.wikimedia.org/wikipedia/commons/0/05/McDonald%27s_square_2020.svg'
   },
   tealive:{
     src:'https://cdn.brandfetch.io/id3lswLeDR/w/3255/h/834/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1790585894655',
-    backup:'https://commons.wikimedia.org/wiki/Special:FilePath/Tealive_logo.svg'
+    backup:'https://upload.wikimedia.org/wikipedia/commons/c/ca/Tealive_logo.svg'
   },
   kfc:{
-    src:'https://commons.wikimedia.org/wiki/Special:FilePath/KFC_logo_wordmark.svg',
-    backup:'https://commons.wikimedia.org/wiki/Special:FilePath/KFC_logotype.svg'
+    src:'https://cdn.sanity.io/images/kbqq3e0r/production/afcc23c7797d1ad1d55bd0e200e2128cfe163eba-4096x3802.png?w=600&q=90',
+    backup:'https://upload.wikimedia.org/wikipedia/commons/5/5d/KFC_2026_%28wordmark%29.svg'
   },
   subway:{
-    src:'https://commons.wikimedia.org/wiki/Special:FilePath/Subway_2016_logo.svg',
+    src:'https://upload.wikimedia.org/wikipedia/commons/5/5c/Subway_2016_logo.svg',
     backup:'https://commons.wikimedia.org/wiki/Special:FilePath/Subway_icon.svg'
   },
   familymart:{
     src:'https://cdn.brandfetch.io/idmayRRNod/w/497/h/73/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1789153229347',
-    backup:'https://commons.wikimedia.org/wiki/Special:FilePath/FamilyMart_Logo_(2016-).svg'
+    backup:'https://upload.wikimedia.org/wikipedia/commons/3/31/FamilyMart_Logo_%282016-%29.svg'
   },
   'sushi king':{
     src:'https://www.sunwayvelocitymall.com/static/shops/a04d8ff4032d55fb8f8ddcd771dd2210/w768.png'
